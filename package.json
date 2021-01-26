@@ -1,0 +1,62 @@
+{
+  "name": "ggx-cocos-game-base",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "pub": "npm publish"
+  },
+  "jest": {
+    "rootDir": "tests",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xzcode/ggx-cocos-game-base.git"
+  },
+  "keywords": [
+    "ggx-cocos-game-base"
+  ],
+  "author": "zai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xzcode/ggx-cocos-game-base/issues"
+  },
+  "homepage": "https://github.com/xzcode/ggx-cocos-game-base#readme",
+  "publishConfig": {
+    "registry": "http://common.host:8081/repository/npm-releases"
+  },
+  "devDependencies": {
+    "@types/chance": "^1.1.0",
+    "@types/crypto-js": "^3.1.47",
+    "@types/jest": "^25.2.1",
+    "@types/long": "^4.0.1",
+    "@types/node": "^14.0.9",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.2.3",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "protobufjs": "^6.9.0",
+    "crypto-js": "^4.0.0"
+  }
+}
